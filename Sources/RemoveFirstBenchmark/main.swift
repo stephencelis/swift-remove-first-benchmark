@@ -3,6 +3,14 @@ import Foundation
 
 let string = String(repeating: " ", count: 10_000_000)
 
+benchmark("String.removeFirst()") {
+  var s = string
+  s.removeFirst()
+}
+benchmark("String.removeFirst(1)") {
+  var s = string
+  s.removeFirst(1)
+}
 benchmark("Substring.removeFirst()") {
   var s = string[...]
   s.removeFirst()
