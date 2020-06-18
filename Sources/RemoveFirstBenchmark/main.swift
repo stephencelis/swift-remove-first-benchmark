@@ -19,11 +19,11 @@ benchmark("Substring.removeFirst(1)") {
   var s = string[...]
   s.removeFirst(1)
 }
-benchmark("Substring.UnicodeScalarsView.removeFirst()") {
+benchmark("Substring.UnicodeScalarView.removeFirst()") {
   var s = string[...]
   s.unicodeScalars.removeFirst()
 }
-benchmark("Substring.UnicodeScalarsView.removeFirst(1)") {
+benchmark("Substring.UnicodeScalarView.removeFirst(1)") {
   var s = string[...]
   s.unicodeScalars.removeFirst(1)
 }
